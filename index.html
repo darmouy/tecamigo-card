@@ -3,23 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://darmouy.github.io/tecamigo-card/">
-<meta property="og:title" content="Ostoic Tech
-Tecnologia, Informática & Segurança Eletrônica">
-<meta property="og:description" content="Informática · Tecnologia & Segurança Eletrônica · Pelotas – RS">
+<meta property="og:title" content="Ostoic Tech – Tecnologia, Informática &amp; Segurança Eletrônica">
+<meta property="og:description" content="Tecnologia, Informática &amp; Segurança Eletrônica · Pelotas – RS">
 <meta property="og:image" content="https://darmouy.github.io/tecamigo-card/og-image.png">
-<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="628">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:url" content="https://darmouy.github.io/tecamigo-card/">
+<meta property="og:image:height" content="280">
+<meta property="og:url" content="https://darmouy.github.io/tecamigo-card">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="TecAmigo">
+<meta property="og:site_name" content="Ostoic Tech – Tecnologia, Informática &amp; Segurança Eletrônica">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TecAmigo">
-<meta name="twitter:description" content="Informática · Tecnologia & Segurança Eletrônica · Pelotas – RS">
+<meta name="twitter:title" content="Ostoic Tech – Tecnologia, Informática &amp; Segurança Eletrônica">
+<meta name="twitter:description" content="Tecnologia, Informática &amp; Segurança Eletrônica · Pelotas – RS">
 <meta name="twitter:image" content="https://darmouy.github.io/tecamigo-card/og-image.png">
-<title>TecAmigo – Suporte Técnico</title>
+<title>Ostoic Tech – Suporte Técnico</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
@@ -224,6 +220,26 @@ Tecnologia, Informática & Segurança Eletrônica">
     width: clamp(55px, 15vw, 70px);
     height: clamp(55px, 15vw, 70px);
   }
+
+  /* Badge "anos de confiança" */
+  .trust-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(91, 180, 255, 0.08);
+    border: 1px solid rgba(91, 180, 255, 0.15);
+    border-radius: 14px;
+    padding: 8px 10px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    flex-shrink: 0;
+    min-width: 0;
+  }
+  .trust-badge .stars { display: flex; gap: 1px; justify-content: center; }
+  .trust-badge .stars svg { width: 10px; height: 10px; }
+  .trust-badge .trust-text { font-size: 11px; font-weight: 700; color: #5AB4FF; letter-spacing: 0.02em; margin-top: 3px; }
+  .trust-badge .trust-sub { font-size: 10px; color: #5A7090; margin-top: 1px; }
+
   /* ── LOCATION ── */
   .location {
     display: flex;
@@ -271,9 +287,10 @@ Tecnologia, Informática & Segurança Eletrônica">
   .category-label {
     font-size: clamp(10px, 2.5vw, 12px);
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #5AB4FF;
+    white-space: nowrap;
   }
 
   @media (max-width: 768px) {
@@ -394,8 +411,22 @@ Tecnologia, Informática & Segurança Eletrônica">
     flex-shrink: 0;
   }
   .tech-info { flex: 1; min-width: 0; }
-  .tech-name { font-size: 13px; font-weight: 700; color: #C8D8F0; white-space: nowrap; }
+  .tech-name { font-size: 13px; font-weight: 700; color: #C8D8F0; }
   .tech-role { font-size: 11px; color: #3A5580; margin-top: 3px; line-height: 1.4; }
+  .tech-badge {
+    display: inline-block;
+    background: rgba(30,111,217,0.12);
+    border: 1px solid rgba(30,111,217,0.25);
+    border-radius: 8px;
+    padding: 3px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #5AB4FF;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
 
   /* ── CTA ── */
   .cta {
@@ -534,9 +565,14 @@ Tecnologia, Informática & Segurança Eletrônica">
           </svg>
         </div>
         <div class="logo-text">
-          <div class="logo-name">TecAmigo<span>.</span></div>
-          <div class="logo-slogan">Tecnologia & Segurança</div>
+          <div class="logo-name">Ostoic Tech<span>.</span></div>
+          <div class="logo-slogan">Tecnologia, Informática &amp; Segurança Eletrônica</div>
         </div>
+      </div>
+      <div class="trust-badge">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="#FFD700" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#FFD700" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#FFD700" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#FFD700" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#FFD700" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="trust-text">5.0</div>
+        <div class="trust-sub">Avaliações</div>
       </div>
     </div>
 
@@ -742,7 +778,8 @@ Tecnologia, Informática & Segurança Eletrônica">
       <div class="tech-avatar" style="font-size:15px;font-weight:800;color:#5AB4FF;letter-spacing:-0.5px;">MO</div>
       <div class="tech-info">
         <div class="tech-name">Moisés Ostoic</div>
-        <div class="tech-role">Técnico Responsável<br>TI &amp; Segurança Eletrônica</div>
+        <div class="tech-role">Técnico Responsável · TI &amp; Segurança Eletrônica</div>
+        <div class="tech-badge">📍 Pelotas – RS</div>
       </div>
     </div>
 
